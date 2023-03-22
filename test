@@ -1,6 +1,6 @@
 
 Here's an example of a digital clock using HTML, CSS, and JavaScript that you can use as a reference:
-```html
+html
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,7 +39,7 @@ Here's an example of a digital clock using HTML, CSS, and JavaScript that you ca
 	</script>
 </body>
 </html>
-```
+
 You can also refer to these resources for more examples:
 - [MakeUseOf](https://www.makeuseof.com/create-a-digital-clock-html-css-javascript/)
 - [JavaTpoint](https://www.javatpoint.com/how-to-display-a-digital-clock-using-html-css-and-javascript)
