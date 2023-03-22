@@ -1,0 +1,56 @@
+
+Here's an example of a digital clock using HTML, CSS, and JavaScript that you can use as a reference:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Digital Clock</title>
+	<style type="text/css">
+		body {
+			background-color: #000;
+			color: #fff;
+			font-size: 50px;
+			text-align: center;
+			padding-top: 200px;
+			font-family: Arial;
+		}
+	</style>
+</head>
+<body onload="startTime()">
+	<div id="clock"></div>
+
+	<script type="text/javascript">
+		function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('clock').innerHTML =
+			h + ":" + m + ":" + s;
+			var t = setTimeout(startTime, 500);
+		}
+
+		function checkTime(i) {
+			if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			return i;
+		}
+	</script>
+</body>
+</html>
+```
+You can also refer to these resources for more examples:
+- [MakeUseOf](https://www.makeuseof.com/create-a-digital-clock-html-css-javascript/)
+- [JavaTpoint](https://www.javatpoint.com/how-to-display-a-digital-clock-using-html-css-and-javascript)
+- [CodeWithRandom](https://www.codewithrandom.com/2022/12/19/javascript-digital-clocks/)
+- [Dev.to](https://dev.to/dboatengx/build-a-real-time-changing-digital-clock-using-html-css-javascript-689)
+
+I hope this helps! Let me know if you have any other questions.😊
+
+Source: Conversation with Bing, 3/22/2023(1) How to Create a Digital Clock Using HTML, CSS, and JavaScript - MUO. https://www.makeuseof.com/create-a-digital-clock-html-css-javascript/ Accessed 3/22/2023.
+(2) 15+ Digital Clocks Using HTML,CSS, & JavaScript. https://www.codewithrandom.com/2022/12/19/javascript-digital-clocks/ Accessed 3/22/2023.
+(3) How to display a digital clock using HTML, CSS, and JavaScript?. https://www.javatpoint.com/how-to-display-a-digital-clock-using-html-css-and-javascript Accessed 3/22/2023.
+(4) How to Create a Digital Clock Using HTML, CSS, and JavaScript - MUO. https://www.makeuseof.com/create-a-digital-clock-html-css-javascript/ Accessed 3/22/2023.
+(5) 15+ Digital Clocks Using HTML,CSS, & JavaScript. https://www.codewithrandom.com/2022/12/19/javascript-digital-clocks/ Accessed 3/22/2023.
+(6) Build A Real-time Changing Digital Clock Using HTML, CSS & JavaScript. https://dev.to/dboatengx/build-a-real-time-changing-digital-clock-using-html-css-javascript-689 Accessed 3/22/2023.
